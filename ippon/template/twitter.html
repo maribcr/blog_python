@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Template para a Mari</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+    <style rel="stylesheet">
+       ul {
+           list-style: none;
+       }
+
+       ul li {
+           text-decoration: none;
+           background-color: #fafafa;
+           box-shadow: 0px 0px 5px #000;
+       }
+
+       .foto-perfil img {
+           border-radius:50%;
+       }
+
+       .atleta {
+           padding: 0 20px;
+       }
+
+       .atleta .infos {
+           padding-left: 0px;
+       }
+    </style>
+</head>
+
+<body>
+
+    <div class="columns is-centered">
+
+        <div class="column is-half">
+            <br>
+            <ul>
+                <li>
+                    <!-- Criado praticamente usando apenas o código do próprio framework.
+                        Seu componente vai daqui, até... -->
+                    <div class="atleta columns">
+                        <div class="foto-perfil column is-one-quarter">
+                            <img src="http://www.mitologiaonline.com/wp-content/uploads/2016/06/Deus-Poseidon.jpg" alt="" class="image is-96x96">
+                        </div>
+                        <div class="infos column is-three-quarters">
+                            <div class="level">
+                                <div class="level-left">
+                                    <div class="level-item">Poseidon</div>
+                                </div>
+                                <div class="level-right">
+                                    <div class="level-item">98%</div>
+                                </div>
+                            </div>
+                            <progress class="progress is-info" value="98" max="100"></progress>
+                        </div>
+                    </div>
+                    <!-- Aqui!!! :D -->
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

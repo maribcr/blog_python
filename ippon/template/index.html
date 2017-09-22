@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Template para a Mari</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/js/main.js">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/processbar.css" />
+
+
+</head>
+
+<body>
+    <!-- Parte destinada aos menus -->
+
+    <!-- Prieiro menu -->
+    <nav class="navbar is-transparent cinza-1">
+        <div class="container">
+            <a class="navbar-item" href="#">globo.com</a>
+            <a class="navbar-item" href="#">g1</a>
+            <a class="navbar-item" href="#">globoesporte</a>
+            <a class="navbar-item" href="#">gshow</a>
+            <a class="navbar-item" href="#">famosos & etc</a>
+            <a class="navbar-item" href="#">vídeos</a>
+            <div class="navbar-end">
+                <a class="navbar-item" href="#">Usuário</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Segundo menu -->
+    <nav class="navbar is-transparent vermelho-1 menu-vermelho ">
+        <div class="container">
+            <!-- Esquerda -->
+            <div class="navbar-start">
+                <div class="navbar-brand">
+                    <a href="" class="navbar-item">
+                    <span class="icon">
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <h5>menu</h5>
+                </a>
+                </div>
+                <a href="#" class="navbar-item">ge</a>
+            </div>
+
+            <!-- Centro -->
+            <div class="navbar-item level-item">IPPON</div>
+
+            <!-- Direita -->
+            <div class="navbar-end">
+                <div class="navbar-item">BUSCAR</div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Parte destinada à apresentação e -->
+    <section class="apresentacao has-text-centered">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-half  distancia-padrao">
+                    <!-- Imagem -->
+                    <figure class="image is-128x128">
+                        <img src="images/logo-ippon.png">
+                    </figure>
+
+                    <!-- Título -->
+                    <h2 class="page-title">Popularômetro</h2>
+
+                    <p class="page-subtitle">Quem sairá vencedor da primeira edição do Ippon?</p>
+
+                    <!-- Redes sociais -->
+                    <div class="social-icons">
+                        <div class="social-container">
+                            <a class="social-icons-icon icon-facebook"
+                               data-social="facebook"
+                               href="https://www.facebook.com/dialog/feed?app_id=798331930188933&amp;display=popup&amp;link=http://app.globoesporte.globo.com/{{ projeto.editoria.suffix }}/appito/{{ projeto.ano }}/&amp;redirect_uri=http://app.globoesporte.globo.com/{{ projeto.editoria.suffix }}/appito/{{ projeto.ano }}/&amp;picture=http://app.globoesporte.globo.com/templates/appito/images/share.jpg&amp;description={{ projeto.subtitulo }}"
+                               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <g fill="none" fill-rule="nonzero">
+                                        <path fill="currentColor"
+                                              d="M26.568 27.003c1.4-1.4 2.5-3 3.3-4.9.8-1.9 1.2-3.9 1.2-6s-.4-4.2-1.2-6c-.7-2-1.8-3.6-3.2-5.1-1.4-1.4-3.1-2.5-4.9-3.3-2-.8-4-1.2-6.1-1.2-2.2 0-4.2.4-6.1 1.2-1.9.8-3.6 1.9-5 3.3-1.4 1.5-2.5 3.1-3.3 5-.8 1.9-1.2 3.9-1.2 6s.4 4.2 1.2 6c.8 1.9 1.9 3.5 3.3 4.9 1.4 1.4 3 2.5 4.9 3.3 1.9.8 3.9 1.2 6.1 1.2 2.2.1 4.2-.3 6.1-1.1 1.9-.8 3.5-1.9 4.9-3.3z"></path>
+                                        <path class="inner-social-symbol" fill="#FFF"
+                                              d="M13.868 13.703v-1.4c0-1 .3-1.9 1-2.6.7-.8 1.5-1.2 2.5-1.2h2.3v2.8h-2.3c-.1 0-.3.1-.4.3-.1.2-.2.4-.2.6v1.5h2.9v2.8h-2.9v7h-2.9v-7h-2.3v-2.8h2.3z"></path>
+                                    </g>
+                                </svg>
+                            </a>
+
+
+                            <a class="social-icons-icon icon-twitter"
+                               data-social="twitter"
+                               text="aaaaaaa"
+                               href="https://twitter.com/intent/tweet?url=http://app.globoesporte.globo.com/{{ projeto.editoria.suffix }}/appito/{{ projeto.ano }}/"
+                               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 31">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <path fill="currentColor"
+                                              d="M4.6 4.5C3.1 5.9 2 7.6 1.2 9.4c-.8 1.9-1.2 3.9-1.2 6s.4 4.2 1.2 6c.8 2 1.9 3.6 3.4 5 1.4 1.4 3.1 2.5 5 3.3 1.9.8 3.9 1.2 6.1 1.2 2.2 0 4.2-.4 6.1-1.2 1.9-.8 3.5-1.9 4.9-3.3 1.4-1.4 2.5-3 3.3-4.9.8-1.9 1.2-3.9 1.2-6s-.4-4.2-1.2-6c-.8-1.9-1.9-3.5-3.3-4.9-1.4-1.4-3-2.5-4.9-3.3-2-.9-4-1.3-6.2-1.3s-4.2.4-6.1 1.2C7.6 2 6 3.1 4.6 4.5z"></path>
+                                        <path class="inner-social-symbol" fill="#FFF"
+                                              d="M21.9 12v.3c0 1.1-.2 2.1-.6 3.2-.4 1.1-1 2-1.7 2.9-.8.9-1.7 1.5-2.8 2.1-1.1.5-2.4.8-3.9.8-.9 0-1.7-.1-2.6-.4-.8-.2-1.6-.6-2.3-1h.8c1.5 0 2.8-.4 3.9-1.3-.7 0-1.3-.2-1.9-.7-.5-.4-.9-.9-1.1-1.5.2.1.4.1.5.1h.5c.1 0 .3 0 .4-.1-.6-.2-1.2-.5-1.6-1.1-.5-.6-.7-1.2-.7-2 .4.2.9.4 1.4.4-.9-.6-1.4-1.4-1.4-2.6 0-.6.1-1.1.4-1.6.8 1 1.8 1.7 2.9 2.3 1.1.6 2.3.9 3.7 1-.1-.3-.1-.5-.1-.7 0-.9.3-1.6.9-2.2.6-.6 1.4-.9 2.2-.9.5 0 .9.1 1.3.3.4.2.7.4 1 .7.4-.1.7-.2 1.1-.3.3-.1.7-.3 1-.4-.1.4-.3.7-.6 1-.2.3-.5.5-.8.7.3-.1.6-.1.9-.2l.9-.3c-.3.1-.5.4-.8.7-.3.3-.6.5-.9.8z"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Algum texto -->
+                    <p class="distancia-padrao-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Parte destinada ao conteúdo -->
+    <section class="tabs">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-mobile is-half distancia-padrao">
+                    <!-- Tabs -->
+                    <div class="tabs is-boxed is-large">
+                        <ul>
+                            <li class="tab1 is-active"><a>Votos Acumulados</a></li>
+                            <li class="tab2"><a>Votos da Semana</a></li>
+                        </ul>
+                    </div>
+                    <div class="react-tabs">
+                        <!-- TAB 1 -->
+                        <div id="tab1">
+                            <div class="atleta columns">
+                                <div class="foto-perfil column is-one-quarter">
+                                    <img src="http://www.mitologiaonline.com/wp-content/uploads/2016/06/Deus-Poseidon.jpg" alt="" class="image is-96x96">
+                                </div>
+                                <div class="infos column is-three-quarters">
+                                    <div class="level">
+                                        <div class="level-left">
+                                            <div class="level-item"># Atleta número 01</div>
+                                        </div>
+                                        <div class="level-right" id="percent-count">
+                                            <div class="level-item red">98%</div>
+                                        </div>
+                                    </div>
+                                    <progress class="progress is-danger" value="98" max="100" id="progress-bar"></progress>
+                                </div>
+                            </div>
+                            <div class="atleta columns">
+                                <div class="foto-perfil column is-one-quarter">
+                                    <img src="http://www.mitologiaonline.com/wp-content/uploads/2016/06/Deus-Poseidon.jpg" alt="" class="image is-96x96">
+                                </div>
+                                <div class="infos column is-three-quarters">
+                                    <div class="level">
+                                        <div class="level-left">
+                                            <div class="level-item"># Atleta número 02</div>
+                                        </div>
+                                        <div class="level-right" id="percent-count">
+                                            <div class="level-item blue">86%</div>
+                                        </div>
+                                    </div>
+                                    <progress class="progress is-info" value="86" max="100" id="progress-bar"></progress>
+                                </div>
+                            </div>
+                            <div class="atleta columns">
+                                <div class="foto-perfil column is-one-quarter">
+                                    <img src="http://www.mitologiaonline.com/wp-content/uploads/2016/06/Deus-Poseidon.jpg" alt="" class="image is-96x96">
+                                </div>
+                                <div class="infos column is-three-quarters">
+                                    <div class="level">
+                                        <div class="level-left">
+                                            <div class="level-item" id="percent-count"># Atleta número 03</div>
+                                        </div>
+                                        <div class="level-right">
+                                            <div class="level-item red">75%</div>
+                                        </div>
+                                    </div>
+                                    <progress class="progress is-danger" value="75" max="100" id="progress-bar"></progress>
+                                </div>
+                            </div>
+                            <div class="atleta columns">
+                                <div class="foto-perfil column is-one-quarter">
+                                    <img src="http://www.mitologiaonline.com/wp-content/uploads/2016/06/Deus-Poseidon.jpg" alt="" class="image is-96x96">
+                                </div>
+                                <div class="infos column is-three-quarters">
+                                    <div class="level">
+                                        <div class="level-left">
+                                            <div class="level-item"># Atleta número 04</div>
+                                        </div>
+                                        <div class="level-right" id="percent-count">
+                                            <div class="level-item blue">64%</div>
+                                        </div>
+                                    </div>
+                                    <progress class="progress is-info" value="64" max="100" id="progress-bar"></progress>
+                                </div>
+                            </div>
+                            <div class="atleta columns">
+                                <div class="foto-perfil column is-one-quarter">
+                                    <img src="http://www.mitologiaonline.com/wp-content/uploads/2016/06/Deus-Poseidon.jpg" alt="" class="image is-96x96">
+                                </div>
+                                <div class="infos column is-three-quarters">
+                                    <div class="level">
+                                        <div class="level-left">
+                                            <div class="level-item"># Atleta número 05</div>
+                                        </div>
+                                        <div class="level-right" id="percent-count">
+                                            <div class="level-item red">32%</div>
+                                        </div>
+                                    </div>
+                                    <progress class="progress is-danger" value="32" max="100" id="progress-bar"></progress>
+                                </div>
+                            </div>
+                            <div class="atleta columns">
+                                <div class="foto-perfil column is-one-quarter">
+                                    <img src="http://www.mitologiaonline.com/wp-content/uploads/2016/06/Deus-Poseidon.jpg" alt="" class="image is-96x96">
+                                </div>
+                                <div class="infos column is-three-quarters">
+                                    <div class="level">
+                                        <div class="level-left">
+                                            <div class="level-item"># Atleta número 06</div>
+                                        </div>
+                                        <div class="level-right" id="percent-count">
+                                            <div class="level-item blue">16%</div>
+                                        </div>
+                                    </div>
+                                    <progress class="progress is-info" value="16" max="100" id="progress-bar"></progress>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TAB 2 -->
+                        <div id="tab2" class="tab-esconde">
+                            <div class="atleta columns">
+                                <div class="foto-perfil column is-one-quarter">
+                                    <img src="http://www.mitologiaonline.com/wp-content/uploads/2016/06/Deus-Poseidon.jpg" alt="" class="image is-96x96">
+                                </div>
+                                <div class="infos column is-three-quarters">
+                                    <div class="level">
+                                        <div class="level-left">
+                                            <div class="level-item"># Atleta número 01</div>
+                                        </div>
+                                        <div class="level-right" id="percent-count">
+                                            <div class="level-item red">98%</div>
+                                        </div>
+                                    </div>
+                                    <progress class="progress is-danger" value="98" max="100" id="progress-bar"></progress>
+                                </div>
+                            </div>
+                            <div class="atleta columns">
+                                <div class="foto-perfil column is-one-quarter">
+                                    <img src="http://www.mitologiaonline.com/wp-content/uploads/2016/06/Deus-Poseidon.jpg" alt="" class="image is-96x96">
+                                </div>
+                                <div class="infos column is-three-quarters">
+                                    <div class="level">
+                                        <div class="level-left">
+                                            <div class="level-item"># Atleta número 02</div>
+                                        </div>
+                                        <div class="level-right" id="percent-count">
+                                            <div class="level-item blue">86%</div>
+                                        </div>
+                                    </div>
+                                    <progress class="progress is-info" value="86" max="100" id="progress-bar"></progress>
+                                </div>
+                            </div>
+                            <div class="atleta columns">
+                                <div class="foto-perfil column is-one-quarter">
+                                    <img src="http://www.mitologiaonline.com/wp-content/uploads/2016/06/Deus-Poseidon.jpg" alt="" class="image is-96x96">
+                                </div>
+                                <div class="infos column is-three-quarters">
+                                    <div class="level">
+                                        <div class="level-left">
+                                            <div class="level-item"># Atleta número 03</div>
+                                        </div>
+                                        <div class="level-right" id="percent-count">
+                                            <div class="level-item red">75%</div>
+                                        </div>
+                                    </div>
+                                    <progress class="progress is-danger" value="75" max="100" id="progress-bar"></progress>
+                                </div>
+                            </div>
+                            <div class="atleta columns">
+                                <div class="foto-perfil column is-one-quarter">
+                                    <img src="http://www.mitologiaonline.com/wp-content/uploads/2016/06/Deus-Poseidon.jpg" alt="" class="image is-96x96">
+                                </div>
+                                <div class="infos column is-three-quarters">
+                                    <div class="level">
+                                        <div class="level-left">
+                                            <div class="level-item"># Atleta número 04</div>
+                                        </div>
+                                        <div class="level-right" id="percent-count">
+                                            <div class="level-item blue">64%</div>
+                                        </div>
+                                    </div>
+                                    <progress class="progress is-info" value="64" max="100" id="progress-bar"></progress>
+                                </div>
+                            </div>
+                            <div class="atleta columns">
+                                <div class="foto-perfil column is-one-quarter">
+                                    <img src="http://www.mitologiaonline.com/wp-content/uploads/2016/06/Deus-Poseidon.jpg" alt="" class="image is-96x96">
+                                </div>
+                                <div class="infos column is-three-quarters">
+                                    <div class="level">
+                                        <div class="level-left">
+                                            <div class="level-item"># Atleta número 05</div>
+                                        </div>
+                                        <div class="level-right" id="percent-count">
+                                            <div class="level-item red">32%</div>
+                                        </div>
+                                    </div>
+                                    <progress class="progress is-danger" value="32" max="100" id="progress-bar"></progress>
+                                </div>
+                            </div>
+                            <div class="atleta columns">
+                                <div class="foto-perfil column is-one-quarter">
+                                    <img src="http://www.mitologiaonline.com/wp-content/uploads/2016/06/Deus-Poseidon.jpg" alt="" class="image is-96x96">
+                                </div>
+                                <div class="infos column is-three-quarters">
+                                    <div class="level">
+                                        <div class="level-left">
+                                            <div class="level-item"># Atleta número 06</div>
+                                        </div>
+                                        <div class="level-right" id="percent-count">
+                                            <div class="level-item blue">16%</div>
+                                        </div>
+                                    </div>
+                                    <progress class="progress is-info" value="16" max="100" id="progress-bar"></progress>
+                                </div>
+                            </div>
+                            <div class="atleta columns">
+                                <div class="foto-perfil column is-one-quarter">
+                                    <img src="http://www.mitologiaonline.com/wp-content/uploads/2016/06/Deus-Poseidon.jpg" alt="" class="image is-96x96">
+                                </div>
+                                <div class="infos column is-three-quarters">
+                                    <div class="level">
+                                        <div class="level-left">
+                                            <div class="level-item"># Atleta número 07</div>
+                                        </div>
+                                        <div class="level-right" id="percent-count">
+                                            <div class="level-item red">8%</div>
+                                        </div>
+                                    </div>
+                                    <progress class="progress is-danger" value="8" max="100" id="progress-bar"></progress>
+                                </div>
+                            </div>
+                            <div class="atleta columns">
+                                <div class="foto-perfil column is-one-quarter">
+                                    <img src="http://www.mitologiaonline.com/wp-content/uploads/2016/06/Deus-Poseidon.jpg" alt="" class="image is-96x96">
+                                </div>
+                                <div class="infos column is-three-quarters">
+                                    <div class="level">
+                                        <div class="level-left" >
+                                            <div class="level-item"># Atleta número 08</div>
+                                        </div>
+                                        <div class="level-right" id="percent-count">
+                                            <div class="level-item blue">4%</div>
+                                        </div>
+                                    </div>
+                                    <progress class="progress is-info" value="4" max="100" id="progress-bar"></progress>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Rodapé a partir daqui -->
+
+    <!-- Javascript a partir daqui -->
+    <script>
+        var $ = document.querySelector.bind(document);
+
+        $(".tabs").addEventListener("click", e => {
+            let currEl = e.target.parentNode;
+            let currTab = null;
+            $(".tabs .is-active").classList.remove("is-active");
+            currEl.classList.add("is-active");
+            $(".tab-esconde").classList.remove("tab-esconde");
+            currEl.classList.contains("tab1") ? currTab = $("#tab2") : currTab = $("#tab1");
+            currTab.classList.add("tab-esconde");
+        });
+
+    </script>
+
+</body>
+
+</html>
